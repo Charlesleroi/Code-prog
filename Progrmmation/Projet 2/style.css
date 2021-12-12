@@ -1,0 +1,98 @@
+/* Réinitialisation */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url(./images/turkey-mullen-nogarnish720._TTW_._CR0\,56\,1080\,608_.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+/* Ajouter le filtre gris */
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+body * {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 60px;
+    margin: -80px 0 40px;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.decompte {
+    display: none;
+    transform: scale(2);
+}
+
+.temps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.temps h2 {
+    margin: 0 0 5px;
+}
+
+.annee {
+    font-size: 200px;
+    z-index: -1;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 100px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media(max-width: 500px) {
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .temps {
+        margin: 5px;
+    }
+
+    .temps h2 {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .temps small {
+        font-size: 12px;
+    }
+
+
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/1fc8def0c7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Lecteur vidéo</title>
+</head>
+<body>
+
+    <h1>Lecteur de musique</h1>
+
+    <div class="musique-contenant" id="musique-contenant">
+        
+        <!--Titre et la barre de progres-->
+
+        <div class="musique-info">
+            <h4 id="titre">Dupstep</h4>
+            <div class="progres-contenant" id="progres-contenant">
+                <div class="progres" id="progres"></div>
+            </div>
+        </div>
+
+        <!--Audio-->
+
+        <audio src="musique/chanson1.mp3" id="audio"></audio>
+
+        <!--Image du disque-->
+
+        <div class="img-contenant">
+            <img src="Images/chanson1.png" alt="Album cover" id="cover">
+        </div>
+
+        <!--Boutons-->
+
+        <div class="navigation">
+
+            <button class="action-btn" id="precedent">
+                <i class="fas fa-backward"></i>
+            </button>
+            
+            <button class="action-btn action-btn-gros" id="play">
+                <i class="fas fa-play"></i>
+            </button>
+            
+            <button class="action-btn" id="suivant">
+                <i class="fas fa-forward"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

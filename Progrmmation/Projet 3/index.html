@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/fae5a97603.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="progres.css">
+
+    <link rel="stylesheet" href="style.css">    
+    
+
+    <title>Lecteur vidéo</title>
+</head>
+<body>
+    
+    <h1>Lecteur Vidéo</h1>
+    
+    <video
+        src="./videos/gone.mp4"
+        id="video"
+        class="ecran"
+        poster="images/poster.png"     
+    ></video>
+
+    <div class="controles">
+
+        <button class="btn" id="play">
+            <i class="fas fa-play" fa-2x></i> 
+        </button>
+
+        <button class="btn" id="stop">
+            <i class="fas fa-stop" fa-2x></i> 
+        </button>
+
+        <input 
+        type="range"
+        id="progres"
+        min="0" max="100"
+        step="0.1"
+        value="0"
+        >
+
+        <span class="etampe-temps" id="etampe-temps">00:00</span>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

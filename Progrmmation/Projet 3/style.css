@@ -1,0 +1,75 @@
+/* font-family: 'Questrial', sans-serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    margin: 0;
+    background-color: #666;
+}
+
+h1 {
+    color: #fff;
+}
+
+.ecran {
+    cursor: pointer;
+    width: 60%;
+    background-color: #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.controles {
+    background-color: #333;
+    color: #fff;
+    width: 60%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.controles .btn {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.controles .fa-play {
+    color: #62cb1c;
+}
+.controles .fa-stop {
+    color: #dc3545;
+    margin-right: 10px;
+}
+.controles .fa-pause {
+    color: #fff;
+}
+
+.controles .etampe-temps {
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+
+@media(max-width: 800px) {
+    .ecran,
+    .controles {
+        width: 90%;
+    }
+}
